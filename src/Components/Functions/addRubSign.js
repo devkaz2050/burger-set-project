@@ -1,0 +1,1 @@
+export const addRubSign = value => value.toLocaleString('ru-RU', {style: 'currency', currency: 'RUB'});
