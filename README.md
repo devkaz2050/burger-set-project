@@ -1,41 +1,25 @@
-# Описание проекта
+# Project Description
 ---
-Bull.KO бургеры - кейс-стади проект.
-
-Сайт: https://bullko-bugers.web.app
+Web application for ordering of burgers.
 
 ---
-### Описание кейса:
-Bull.KO - сеть быстрого питания в Санкт Петербурге. В ближайшее время компания собирается запустить доставку по СПб и сервис по сбору заказов. Необходимо разработать приложение, которое позволит регистрировать пользователей, хранить истоию их заказов, демонстрировать позиции меню и совершать заказы.
+### Technology:
 
-### Технологии:
+- **React**  -React was chosen to develop a web application to ensure the application's speed.
+- **React Hooks** - for exchanging states between components and implementing the functionality of the service
+- **Firebase** - for hosting a finished application (Firebase Hosting), working with a database (Firebase database), user authentication (Firebase authentication). 
+- **Babel** - to transpile React to JavaScript and ensure code compatibility with early browsers
+- **Webpack** - to install dependencies, build and develop the project.
+- **React animations** - to simplify the work with animations during project development.
+- **styled components** - for quick work with component styles.
 
-- **React**  - выбран, чтобы обеспечить быстродействие приложения и в будущем позволить реализовать PWA (или ускорить написание приложения на React Native за счет частичного переиспользования кода)
-- **React Hooks** - для обмена состояниями между компонентами и реализации функционала сервиса
-- **Firebase** - для хостинга готового приложения (Firebase Hosting), работы с базой данных (Firebase database), аутентификацией пользователей (Firebase authentication). 
-- **Babel** - для транспиляции React в JavaScript и обеспечения совместимости кода с ранними версиями браузеров
-- **Webpack** - для установки зависимостей, сборки проекта и разработки.
-- **React animations** - для упрощения работы с анимациями при разработке проекта
-- **styled components** - для быстрой работы со стилями компонентов
+### Functionality:
 
-### Функционал:
+- Demonstration of goods (menu items)
+- Possibility of forming an order with a calculation of the total cost and quantity of goods
+- Ability to delete and edit items in the order
+- All orders are stored in a user-specific database
+- Registration and authorization of users
+- Prohibition of making an order without authorization
+- Implemented user profile
 
-- Демонстрация товаров (позиций меню)
-- Возможность формирования заказа с подсчетом общей стоимости и количества товаров
-- Возможность удаления и редактирования позиций в заказе
-- Все заказы хранятся в базе данных с приязкой к пользователю
-- Регистрация и авторизация пользователей
-- Запрет совершения заказа без авторизации
-- Реализован профиль пользователя
-
-### Над чем ведется работа:
-
-- [x] Отображение истории заказов в профиле пользователя
-- [ ] Реализация авторизации по e-mail или номеру телефона, а не только через google-аккаунт
-- [ ] Сохранение позиций неоформленного заказа на стороне клиента, чтобы при перезагрузке данные о заказе не очищались
-- [ ] Сохранение данных о пользователе (телефон, адрес) в БД, если пользователь указал их при оформлении заказа
-- [ ] Запрос недостающих данных пользователя при оформлении заказа
-- [ ] Подключение системы оплаты
-- [ ] Автоматизация сбора заказов (передача заявок администратору, оплата)
-- [ ] Рефакторинг кода и оптимизация
-- [ ] Доработка адаптива
