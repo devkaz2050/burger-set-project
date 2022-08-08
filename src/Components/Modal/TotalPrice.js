@@ -34,7 +34,7 @@ export function TotalPrice( order ) {
 
     return (
         <TotalPriceWrapper>
-            <span>Стоимость </span>
+            <span>Price</span>
 
             <Price>
                 <p>{addRubSign(countPrice( order ))}</p>

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import logoImg from '../../img/logo/logo.svg';
+import logoImg from '../../img/logo/burger1.png';
 import personImg from '../../img/person.svg';
 import cartImg from '../../img/cart.svg';
 
@@ -111,20 +111,20 @@ export const NavBar = ({ isCartOpened, setCartOpened, authentication, signIn, si
                         <LinkImg>
                             <img src={personImg} alt="enter icon"/>
                         </LinkImg>
-                        <p className="NavBarText enterLink"><a>Профиль</a></p>
+                        <p className="NavBarText enterLink"><a>Profile</a></p>
                     </LinkBlock> :
                     <LinkBlock onClick={signIn}>
                         <LinkImg>
                             <img src={personImg} alt="enter icon"/>
                         </LinkImg>
-                        <p className="NavBarText enterLink"><a>Войти</a></p>
+                        <p className="NavBarText enterLink"><a>Log In</a></p>
                     </LinkBlock>
                 }
                 <LinkBlock onClick={toggleCart}>
                     <LinkImg>
                         <img src={cartImg} alt="cart icon"/>
                     </LinkImg>
-                    <p className="NavBarText cartLink"><a>Корзина</a></p>
+                    <p className="NavBarText cartLink"><a>Order</a></p>
                 </LinkBlock>
             </NavBarLinks>
         </NavBarStyled>

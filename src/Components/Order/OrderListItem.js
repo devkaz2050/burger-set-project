@@ -85,7 +85,7 @@ export const OrderListItem = ({ order, index, deleteItem, setOpenItem }) => {
         if (optionStr) {
             return (
                 <OptionsWrapper>
-                    <p>Дополнительно: </p>
+                    <p>Additional: </p>
                     <OptionsList>{optionStr}</OptionsList>
                 </OptionsWrapper>
             )

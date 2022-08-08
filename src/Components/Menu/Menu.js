@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import DBMenuBurger from '../DBMenuBurger';
 import { ItemList } from './ItemList';
 // import { useFetch } from "../Hooks/useFetch";
 
@@ -47,7 +48,7 @@ const PreloaderWrapper = styled.div`
 `;
 
 
-// COMPONENT
+// component
 
 
 export const Menu = ({ setOpenItem, DBMenu }) => {
@@ -56,23 +57,23 @@ export const Menu = ({ setOpenItem, DBMenu }) => {
         <MenuStyled>
             <ItemBlock>
                 {
-                    DBMenu ?
+                    DBMenuBurger ?
                         <>
-                            <ItemTitle>Бургеры</ItemTitle>
+                            <ItemTitle>Burgers</ItemTitle>
                             <ItemList
-                                itemList={DBMenu.burger}
+                                itemList={DBMenuBurger.burger}
                                 setOpenItem={setOpenItem} />
-                            <ItemTitle>Напитки</ItemTitle>
+                            <ItemTitle>Drinks</ItemTitle>
                             <ItemList
-                                itemList={DBMenu.drinks}
+                                itemList={DBMenuBurger.drinks}
                                 setOpenItem={setOpenItem} />
-                            <ItemTitle>Закуски</ItemTitle>
+                            <ItemTitle>Snacks</ItemTitle>
                             <ItemList
-                                itemList={DBMenu.snacks}
+                                itemList={DBMenuBurger.snacks}
                                 setOpenItem={setOpenItem} />
                         </> :
                         // <PreloaderWrapper>
-                        //     <p>Кажется, на сервере произошла ошибка...<br/>Попробуйте перезагрузить страницу</p>
+                        //     <p>Возможно, на сервере произошла ошибка...<br/>Попробуйте перезагрузить страницу</p>
                         // </PreloaderWrapper>
                         // :
                         <PreloaderWrapper>

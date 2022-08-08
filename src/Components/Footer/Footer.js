@@ -30,7 +30,7 @@ const InfoBlock = styled.p`
 export const Footer = () => (
     <FooterStyled>
         <InfoBlock>
-            Все права защищены
+            Burger Set. All rights reserved.
         </InfoBlock>
     </FooterStyled>
 );

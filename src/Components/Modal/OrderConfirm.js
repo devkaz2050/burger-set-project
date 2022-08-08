@@ -179,31 +179,31 @@ export const OrderConfirm = ({
         <Overlay onClick={closeModal}>
             <Modal id='orderConfirmModal'>
                 <HeadContent>
-                    <p>Подтверждение заказа</p>
+                    <p>Order Confirmation</p>
                 </HeadContent>
                 <OrderDetails>
-                    <p>Имя получателя: </p>
+                    <p>Customer Name: </p>
                     {
                         authentication.displayName ?
                             <div id='userName' >{authentication.displayName}</div> :
                             <div contentEditable={true} id='userName' placeholder='Не указан'/>
                     }
                     <hr/>
-                    <p>E-mail получателя: </p>
+                    <p>E-mail: </p>
                     {
                         authentication.email ?
                             <div id='userMail' >{authentication.email}</div>:
                             <div contentEditable={true} id='userMail' placeholder='Не указан'/>
                     }
                     <hr/>
-                    <p>Телефон получателя: </p>
+                    <p>Customer Phone: </p>
                     {
                         authentication.phoneNumber ?
                             <div id='userPhone' >{authentication.phoneNumber}</div>:
                             <div contentEditable={true} id='userPhone' placeholder='Не указан'/>
                     }
                     <hr/>
-                    <p>Адрес получателя: </p>
+                    <p>Address: </p>
                     {
                         address ?
                             <div id='userAddress' >{address}</div>:
@@ -212,12 +212,12 @@ export const OrderConfirm = ({
 
                 </OrderDetails>
                 <Total>
-                    <span>Итого: </span>
+                    <span>Total: </span>
                     <span>{addRubSign(totalPriceCount)}</span>
                 </Total>
                 <Footer>
                     <ButtonAddItem onClick={checkOrder}>
-                        Подтвердить заказ
+                        Confirm Order
                     </ButtonAddItem>
                 </Footer>
             </Modal>

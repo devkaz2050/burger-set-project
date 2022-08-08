@@ -1,23 +1,23 @@
 const DBMenu = {
     "burger": [
         {
-            "name": "Двойной Джо",
-            "description": "Сытный бургер с двумя котлетами из мраморной говядины с томатом и сыром гауда. Очень сочный, имеет нежную структуру и яркий вкус.",
+            "name": "Angus Burger",
+            "description": "Delicious burger with two marbled beef patties with tomato and cheese. Very juicy, has a delicate structure and a bright taste.",
             "img": "/Menu/Burgers/burger1.png",
             "id": 1,
-            "price": 319,
+            "price": 79,
             "choices": [
-                "Бекон",
-                "Кетчуп",
-                "Сыр Чеддер",
-                "Красный лук",
-                "Огурцы",
-                "Помидор",
-                "Халапеньо"
+                "Becon",
+                "Ketchup",
+                "Cheddar cheese",
+                "Red onion",
+                "Cucumbers",
+                "Tomato",
+                "Bread"
             ]
         },
         {
-            "name": "Зевс",
+            "name": "Зевссвв",
             "description": "Сочный бургер в греческом стиле. При изготовлении используется котлета из мяса молодых бычков, крупные куски моцареллы, салат айсберг, томаты и оливки.",
             "img": "/Menu/Burgers/burger2.png",
             "id": 2,

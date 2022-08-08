@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import promoImg from '../../img/promo.png';
+import promoImg from '../../img/burgerpromo24.jpg';
 import wave from '../../img/wave.svg';
 
 
@@ -73,11 +73,11 @@ const MenuText = styled.h2`
 export const Promo = () => (
     <PromoStyled id="0">
         <PromoText>
-            Сочные бургеры из фермерских продуктов
+        Taste Most Delicious Burgers in Stockholm!
         </PromoText>
         <WaveBlock>
             <MenuText>
-                МЕНЮ
+                MENU
             </MenuText>
         </WaveBlock>
     </PromoStyled>

@@ -45,7 +45,7 @@ const getItemOptions = (options) => {
     if (optionStr) {
         return (
             <OptionsWrapper>
-                <p>Дополнительно: </p>
+                <p>Additional: </p>
                 <OptionsList>{optionStr}</OptionsList>
             </OptionsWrapper>
         )

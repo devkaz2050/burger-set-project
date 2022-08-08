@@ -214,7 +214,7 @@ export const ModalItem = ({ openItem, setOpenItem, orders, setOrders }) => {
                 </Footer>
                 <ButtonWrapper>
                     <ButtonAddItem className="button-add" onClick={isEdit ? editOrder : addToOrder} >
-                        { isEdit ? 'Изменить' : 'Добавить в корзину'}
+                        { isEdit ? 'Edit Order' : 'Add to Cart'}
                     </ButtonAddItem>
                 </ButtonWrapper>
             </Modal>

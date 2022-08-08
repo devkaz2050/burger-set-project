@@ -79,7 +79,7 @@ export function CountItem({ count, setCount, onChange }) {
 
     return (
         <CountWrapper>
-            <span>Количество</span>
+            <span>Quantity</span>
 
             <CountBox>
                 <ButtonCount className='button-count-min' disabled={count <= 1} onClick={() => setCount( count - 1 )} ><span>-</span></ButtonCount>

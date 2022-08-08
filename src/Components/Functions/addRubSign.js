@@ -1,1 +1,1 @@
-export const addRubSign = value => value.toLocaleString('ru-RU', {style: 'currency', currency: 'RUB'});
+export const addRubSign = value => value.toLocaleString('se-SE', {style: 'currency', currency: 'SEK'});

@@ -129,7 +129,7 @@ export const Cart = ({
             <Overlay id="CartOverlay" onClick={closeModal} >
                 <Modal>
                     <HeadContent>
-                        <p>Ваш заказ</p>
+                        <p>Your Order</p>
                     </HeadContent>
                     <OrderContent>
                         {orders.length ? 
@@ -143,20 +143,20 @@ export const Cart = ({
                                 /> ) }
                             </OrderList> :
                             <EmptyOrderList>
-                                Список заказов пуст
+                            Order list is empty
                             </EmptyOrderList>}        
                         <Total>
-                            <span>Итого: </span>
+                            <span>Total: </span>
                             <span>{addRubSign(totalPriceCount)}</span>
                         </Total>
                     </OrderContent>
                     <Footer>
                         { orders.length ?
                                 <ButtonAddItem disabled={false} className="button-add">
-                                    Оформить заказ
+                                Checkout
                                 </ButtonAddItem> :
                                 <ButtonAddItem disabled={true} className="button-add">
-                                    Оформить заказ
+                                Checkout
                                 </ButtonAddItem>
                         }
                     </Footer>

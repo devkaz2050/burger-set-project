@@ -143,7 +143,7 @@ export const Profile = ({ isProfileOpened, setProfileOpened, authentication, sig
             <Overlay id="ProfileOverlay" onClick={closeModal} >
                 <Modal>
                     <HeadContent>
-                        <p>Ваш профиль</p>
+                        <p>Your Profile</p>
                     </HeadContent>
                     <InfoContent>
                         <ProfileHeadingInfo>
@@ -151,24 +151,24 @@ export const Profile = ({ isProfileOpened, setProfileOpened, authentication, sig
                             <UserName>{authentication.displayName}</UserName>
                         </ProfileHeadingInfo>
                         <ProfileInfo>
-                            <p className="profile-info-heading">Адрес электронной почты:
+                            <p className="profile-info-heading">Email:
                                 <br/>
                                 <span>{authentication.email}</span>
                             </p>
                             <hr/>
-                            <p className="profile-info-heading">Номер телефона:
+                            <p className="profile-info-heading">Phone:
                                 <br/>
                                 <span>{authentication.phoneNumber || 'Не указан'}</span>
                             </p>
                             <hr/>
-                            <div className="profile-info-heading">Заказы:
+                            <div className="profile-info-heading">Orders:
                                 <br/>
                                 {
                                     getOrders().length ?
                                         <PreviousOrders
                                             itemList={getOrders()}
                                         /> :
-                                        <p>Вы еще не совершали заказов</p>
+                                        <p>You have not made any orders yet</p>
                                 }
 
                             </div>
@@ -176,7 +176,7 @@ export const Profile = ({ isProfileOpened, setProfileOpened, authentication, sig
                     </InfoContent>
                     <Footer>
                         <ButtonAddItem className="button-exit" onClick={closeModal}>
-                            Выйти
+                            Log out
                         </ButtonAddItem>
                     </Footer>
                 </Modal>
